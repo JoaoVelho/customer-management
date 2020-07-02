@@ -166,8 +166,8 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 #S3 BUCKETS CONFIG
 
-AWS_ACCESS_KEY_ID = os.environ.get('KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = f"{os.environ.get('KEY_ID')}"
+AWS_SECRET_ACCESS_KEY = f"{os.environ.get('SECRET_ACCESS_KEY')}"
 AWS_STORAGE_BUCKET_NAME = f"{os.environ.get('BUCKET_NAME')}"
 AWS_S3_HOST = 's3.sa-east-1.amazonaws.com'
 AWS_S3_REGION_NAME= 'sa-east-1'
