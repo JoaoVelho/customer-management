@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_DJANGO_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['customer--management.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['customer-management-crm.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -168,7 +168,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 AWS_ACCESS_KEY_ID = os.environ.get('KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('BUCKET')
+AWS_STORAGE_BUCKET_NAME = f"{os.environ.get('BUCKET_NAME')}"
 AWS_S3_HOST = 's3.sa-east-1.amazonaws.com'
 AWS_S3_REGION_NAME= 'sa-east-1'
 AWS_S3_FILE_OVERWRITE = False
