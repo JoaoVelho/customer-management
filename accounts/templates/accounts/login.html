@@ -14,13 +14,13 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background: #7abecc !important;
+			background: #ebeff5 !important;
 		}
 		.user_card {
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #74cfbf;
+			background: rgb(52, 58, 64);
 			position: relative;
 			display: flex;
 			justify-content: center;
@@ -39,12 +39,11 @@
 
 		#form-title{
 			color: #fff;
-			
 		}
 
 		.login_btn {
 			width: 100%;
-			background: #33ccff !important;
+			background: rgb(0, 123, 255) !important;
 			color: white !important;
 		}
 		.login_btn:focus {
@@ -115,10 +114,10 @@
 				{% endfor %}			
 		
 				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
+					<div class="d-flex text-white justify-content-center links">
 						Don't have an account? <a href="{% url 'register' %}" class="ml-2">Sign Up</a>
 					</div>
-					<div class="d-flex justify-content-center links">
+					<div class="d-flex text-white justify-content-center links">
 						Forgot your password? <a href="{% url 'reset_password' %}" class="ml-2">Reset password</a>
 					</div>
 			
