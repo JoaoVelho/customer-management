@@ -2,9 +2,10 @@
 
 <style>
   .hello-msg {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     margin-right: 20px;
+    margin-left: 20px;
   }
 </style>
 
@@ -14,7 +15,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
       {% if request.user.is_staff %}
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'home' %}">Dashboard</a>
@@ -28,8 +29,10 @@
         </li>
       {% endif %}
     </ul>
+    <span class="navbar-text">Hello, {{request.user.customer.name}}</span>
+    <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
   </div>
 
-  <span class="hello-msg">Hello, {{request.user.customer.name}}</span>
-  <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+  {% comment %} <span class="hello-msg">Hello, {{request.user.customer.name}}</span>
+  <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span> {% endcomment %}
 </nav>
