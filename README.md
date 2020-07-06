@@ -1,6 +1,6 @@
 <h3 align="center">
 
-CRM é um projeto desenvolvido utilizando as tecnologias ***Python, Django, AWS, PostgreSQL***.
+CRM é um projeto desenvolvido utilizando as tecnologias ***Python, Django, Bootstrap 4, PostgreSQL, AWS***.
 
 </h3>
 
@@ -14,8 +14,9 @@ Foi criada com o intuito de aprender Python e Django.
 
   - **[Python](https://www.python.org/)**
   - **[Django](https://www.djangoproject.com/)**
-  - **[AWS](https://aws.amazon.com/pt/)**
+  - **[Bootstrap 4](https://getbootstrap.com/)**
   - **[PostgreSQL](https://www.postgresql.org/)**
+  - **[AWS](https://aws.amazon.com/pt/)**
 
 ## **:rocket: COMO UTILIZAR**
 
